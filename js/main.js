@@ -26,7 +26,7 @@ function showResult() {
     checkGuess();
     addPrevGuess();
     guessesCount--;
-    showBalanceOfGuesses
+    showBalanceOfGuesses();
     
     lowOrHi.scrollIntoView({block: "end", behavior: "smooth"});
 
