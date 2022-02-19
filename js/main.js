@@ -26,7 +26,9 @@ function showResult() {
     checkGuess();
     addPrevGuess();
     guessesCount--;
-    showBalanceOfGuesses();
+    showBalanceOfGuesses
+    
+    lowOrHi.scrollIntoView({block: "end", behavior: "smooth"});
 
     if (guessesCount == 0) {
         lowOrHi.textContent = 'Game over!';
@@ -43,6 +45,7 @@ function showResult() {
     }
 
     guessField.value = '';
+    guessField.focus();
 
 }
 
