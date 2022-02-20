@@ -9,6 +9,8 @@ let counter = document.querySelector('.result__counter');
 let lowOrHi = document.querySelector('.result__low-or-high');
 let resetButton = document.querySelector('.reset');
 
+let anchor = document.querySelector('.anchor');
+
 let guessesCount = 10;
 
 guessField.focus();
@@ -28,7 +30,7 @@ function showResult() {
     guessesCount--;
     showBalanceOfGuesses();
     
-    lowOrHi.scrollIntoView({block: "end", behavior: "smooth"});
+    anchor.scrollIntoView({block: "end", behavior: "smooth"});
 
     if (guessesCount == 0) {
         lowOrHi.textContent = 'Game over!';
